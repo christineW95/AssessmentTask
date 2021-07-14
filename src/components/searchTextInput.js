@@ -1,10 +1,7 @@
 import * as React from "react";
 import { Searchbar } from "react-native-paper";
-const SearchComponent = () => {
-    const [searchQuery, setSearchQuery] = React.useState("");
-
-    const onChangeSearch = (query) => setSearchQuery(query);
-
+const SearchComponent = ({ searchQuery = '', onQueryChange }) => {
+    //TODO:validate on number only
     return (
         <Searchbar
             placeholder="Search by ISBN"
@@ -14,7 +11,7 @@ const SearchComponent = () => {
                 borderRadius: 5,
                 borderColor: "lightgray",
             }}
-            onChangeText={onChangeSearch}
+            onChangeText={onQueryChange}
             value={searchQuery}
         />
     );
