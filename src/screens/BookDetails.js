@@ -17,12 +17,13 @@ const BookDetails = (props) => {
     const { number_of_pages, title, revision, publish_date, latest_revision, publishers, contributions, isbn_13, created, first_sentence } = book;
 
     return (
-        <ScrollView style={{ backgroundColor: '#F9EFE4', flex: 1, paddingHorizontal: 20 }}>
-            <View style={{ flex: 1 }}>
-                <Image resizeMode='center' style={{ width: '70%', height: '70%', flex: 1 }} source={require('../assets/images/book.png')} />
+        <ScrollView style={{ backgroundColor: '#F9EFE4', }} contentContainerStyle={{ flex: 1, backgroundColor: '#F9EFE4', paddingHorizontal: 20 }}>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', }}>
+                <ImageBackground resizeMode='center' style={{ width: '70%', height: '70%', flex: 1, left: 40 }} source={require('../assets/images/book.png')} />
+
             </View>
 
-            <Text style={{ fontWeight: 'bold', fontSize: 22 }}>{title || 'Not specified'} </Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 22, paddingVertical: 20 }}>{title || 'Not specified'} </Text>
 
             <Text style={{ fontWeight: 'bold', fontSize: 16 }}>First Sentence </Text>
             <Text style={{ fontSize: 14, opacity: 0.6 }}>{first_sentence['value'] || 'Not specified'} </Text>
