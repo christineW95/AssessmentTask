@@ -2,7 +2,6 @@ import * as React from "react";
 import { Text } from "react-native";
 import { Searchbar } from "react-native-paper";
 const SearchComponent = ({ searchQuery = '', onQueryChange }) => {
-    //TODO:validate on number only
     let regex = new RegExp('^[0-9]*$');
     const [isValid, setIsValid] = React.useState(true)
     return (
