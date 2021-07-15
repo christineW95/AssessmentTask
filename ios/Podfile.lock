@@ -57,6 +57,8 @@ PODS:
     - React-cxxreact (= 0.60.0)
     - React-jsi (= 0.60.0)
   - React-jsinspector (0.60.0)
+  - react-native-safe-area-context (3.2.0):
+    - React-Core
   - React-RCTActionSheet (0.60.0):
     - React-Core (= 0.60.0)
   - React-RCTAnimation (0.60.0):
@@ -81,6 +83,15 @@ PODS:
   - React-RCTWebSocket (0.60.0):
     - React-Core (= 0.60.0)
     - React-fishhook (= 0.60.0)
+  - RNCMaskedView (0.1.11):
+    - React
+  - RNGestureHandler (1.10.3):
+    - React-Core
+  - RNReanimated (1.13.3):
+    - React-Core
+  - RNScreens (3.4.0):
+    - React-Core
+    - React-RCTImage
   - RNVectorIcons (8.1.0):
     - React-Core
   - yoga (0.60.0.React)
@@ -97,6 +108,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -107,6 +119,10 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -137,6 +153,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -157,6 +175,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-community/masked-view"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   yoga:
@@ -175,6 +201,7 @@ SPEC CHECKSUMS:
   React-jsi: 8e128c4d0d8febc2977ef617d1c09bb54326069c
   React-jsiexecutor: 7a3554f703a58963ec80b860144ea0f0e9b910e1
   React-jsinspector: d4ed52225912efe0019bb7f1a225aec20f23049a
+  react-native-safe-area-context: e471852c5ed67eea4b10c5d9d43c1cebae3b231d
   React-RCTActionSheet: b27ff3cf3a68f917c46d2b94abf938b625b96570
   React-RCTAnimation: 9e4708e5bd65fca8285ce7c0aa076f3f4fa5c2f8
   React-RCTBlob: 6eafcc3a24f33785692a7be24918ade607bc8719
@@ -185,9 +212,13 @@ SPEC CHECKSUMS:
   React-RCTText: 685fca2e13b024271048e7e247ef24476f28a41e
   React-RCTVibration: 4ee1cf208ab17a50fafb1c16ffe28fe594a64e4f
   React-RCTWebSocket: fca087d583724aa0e5fef7d911f0f2a28d0f2736
+  RNCMaskedView: f127cd9652acfa31b91dcff613e07ba18b774db6
+  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
+  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
+  RNScreens: 21b73c94c9117e1110a79ee0ee80c93ccefed8ce
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   yoga: 616fde658be980aa60a2158835170f3f9c2d04b4
 
-PODFILE CHECKSUM: 7ed97268cc58cc7334dc55bf7c783f0a04ea4b4e
+PODFILE CHECKSUM: 2aaaf9b1cea142e952449185e882b2b0b86e30b7
 
 COCOAPODS: 1.10.1

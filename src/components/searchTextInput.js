@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Searchbar } from "react-native-paper";
 const SearchComponent = ({ searchQuery = '', onQueryChange }) => {
+    console.warn({ searchQuery })
     //TODO:validate on number only
     return (
         <Searchbar

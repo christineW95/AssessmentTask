@@ -1,21 +1,28 @@
 
 import 'react-native-gesture-handler';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Home } from './src/screens/Home';
-const Stack = createStackNavigator();
-const App = ({ navigation }) => {
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { SearchPage } from './src/screens/SearchResultsPage';
+import { Text } from 'react-native';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import BookDetails from './src/screens/BookDetails';
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: SearchPage,
+  },
+  BookDetails: {
+    screen: BookDetails
+  }
+});
+const AppContainer = createAppContainer(AppNavigator);
+const queryClient = new QueryClient();
 
+const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator headerMode='screen' initialRouteName='Main'>
-        <Stack.Screen name="Main" component={Home} />
-        {/* <Stack.Screen name="BookDetails" component={BookDetails} /> */}
-
-      </Stack.Navigator>
-    </NavigationContainer>
-
+    <QueryClientProvider client={queryClient}>
+      <AppContainer />
+    </QueryClientProvider>
   );
 };
 
