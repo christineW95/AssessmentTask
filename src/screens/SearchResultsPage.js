@@ -21,7 +21,6 @@ export const SearchPage = ({ navigation }) => {
     //TODO:change number to searchQury
     const { isLoading, isError, data, error } = useQuery(['books', '9780140328721'], ({ queryKey }) => fetchBooks(queryKey[1]));
     const onBookPress = (book) => {
-        console.warn({ book })
         navigation.navigate('BookDetails', {
             book: book
         });

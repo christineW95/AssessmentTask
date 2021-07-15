@@ -3,7 +3,6 @@ import { Text, View, Image, TouchableOpacity } from "react-native";
 const Book = (props) => {
     const { number_of_pages, title, revision, publish_date, latest_revision } = props.data;
     const { onBookPress } = props;
-    console.warn({ number_of_pages, title, revision, publish_date, latest_revision })
 
     return (
 
